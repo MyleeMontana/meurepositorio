@@ -1,0 +1,26 @@
+v = input('digite algo:')
+# Tipo da variavel
+
+print(f'Tipo da variável: {type(v)}')
+# Informações sobre a string
+
+print(f' Valor digitado:{v}')
+print(f'É alfanumérico? {v.isalnum()}')
+print(f'É alfabético? {v.isalpha()}')
+print(f'É númerico? {v.isnumeric()}')
+print(f'É capitalizada?{v.istitle()}')
+print(f'Contém espaços em branco? {v.isspace()}')
+
+#Conversão para outros tipos(com tratamentos de erro)
+
+try:
+    v_int = int(v)
+    print(f'Valor inteiro: {v_int}')
+except ValueError:
+    print('Não foi possível converter para inteiro.')
+
+try:
+    v_float = float(v)
+    print(f'Valor inteiro: {v_float}')
+except ValueError:
+    print('Não foi possível converter para float.')
